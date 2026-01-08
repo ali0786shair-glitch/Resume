@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Romeo Graphics | Facebook</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f1cff,#00c6ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 10%;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+.hero p{
+    max-width:700px;
+    margin:auto;
+    opacity:.9;
+    line-height:1.8;
+}
+
+.fb-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 50px;
+    background:#1877f2;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:18px;
+    box-shadow:0 0 50px rgba(24,119,242,.8);
+    transition:.4s;
+}
+.fb-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 80px rgba(24,119,242,1);
+}
+
+/* Info */
+.info{
+    padding:120px 10%;
+    background:#111;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:60px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 0 40px rgba(0,198,255,.3);
+}
+.card h2{
+    margin-bottom:20px;
+}
+.card p{
+    opacity:.8;
+    line-height:1.8;
+}
+
+/* Steps */
+.steps{
+    padding:120px 10%;
+    text-align:center;
+}
+.steps h2{
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.step-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.step{
+    background:#1a1a1a;
+    padding:40px;
+    border-radius:20px;
+    transition:.4s;
+}
+.step:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(0,198,255,.6);
+}
+
+/* Footer */
+.footer{
+    background:#000;
+    padding:80px 10%;
+    text-align:center;
+}
+.footer h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div>
+        <h1>Contact Romeo Graphics</h1>
+        <p>
+            We don’t use boring contact forms.  
+            We believe in real conversation.  
+            Click below and talk directly with our creative team on Facebook Messenger.
+        </p>
+        <a href="https://www.facebook.com/messages/t/" target="_blank" class="fb-btn">
+            💬 Message Us on Facebook
+        </a>
+    </div>
+</section>
+
+<section class="info">
+    <div class="card">
+        <h2>Why Facebook?</h2>
+        <p>
+            Facebook Messenger is fast, secure and trusted by millions.
+            You get instant replies, real human communication, and no waiting.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>What You Get</h2>
+        <p>
+            • Direct talk with designer  
+            • Free consultation  
+            • Custom quote  
+            • Quick project start  
+        </p>
+    </div>
+</section>
+
+<section class="steps">
+    <h2>How It Works</h2>
+    <div class="step-box">
+        <div class="step">Click the Facebook button</div>
+        <div class="step">Messenger opens instantly</div>
+        <div class="step">Tell us about your project</div>
+        <div class="step">We start designing</div>
+    </div>
+</section>
+
+<section class="footer">
+    <h2>Ready to Start?</h2>
+    <p>Join hundreds of happy clients and message Romeo Graphics today.</p>
+    <br>
+    <a href="https://www.facebook.com/messages/t/" target="_blank" class="fb-btn">
+        Contact on Facebook
+    </a>
+</section>
+
+<script>
+// Small animation on scroll
+window.addEventListener("scroll",()=>{
+    document.querySelectorAll(".card,.step").forEach(el=>{
+        let pos = el.getBoundingClientRect().top;
+        if(pos < window.innerHeight-100){
+            el.style.opacity = 1;
+            el.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
