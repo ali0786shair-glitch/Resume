@@ -1,0 +1,15 @@
+from django.shortcuts import render
+
+def homepage(request):
+    return render(request,"index.html")
+
+def projects(request):
+    return render(request, "project.html")
+
+def services(request):
+    return render(request, "services.html")
+
+def contact(request):
+    return render(request, "contact.html")
+
+
